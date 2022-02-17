@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sponsor registration</title>
+
+</head>
+<body>
+{%  include 'html/header.html' %}
+<div class="container" style="background-color: bisque;">
+<div class="row">
+    <div class="col-sm-12" style="padding-top: 30px; padding-bottom: 30px;">
+        <center>
+        <form action="/helpapp/register2" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label"><h5 style="font-family: Bahnschrift;"> USERNAME</h5></label><br>
+  <input type="text" name="username" class="form-control" id="formGroupExampleInput" placeholder="Username">
+</div>
+
+    <div class="mb-3">
+         <label for="formGroupExampleInput2" class="form-label"><h5 style="font-family: Bahnschrift;"> EMAIL</h5></label><br>
+  <input type="text" name="email"  class="form-control" id="formGroupExampleInput" placeholder="Email">
+</div>
+     <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label"><h5 style="font-family: Bahnschrift;"> PASSWORD</h5></label><br>
+  <input type="password" name="password1" class="form-control" id="formGroupExampleInput" placeholder="Password">
+         <div id="passwordHelpBlock" class="form-text">
+  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</div>
+</div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label"><h5 style="font-family: Bahnschrift;"> CONFIRM PASSWORD</h5></label><br>
+  <input type="password" name="password2" class="form-control" id="formGroupExampleInput"  placeholder="Confirm Password">
+</div>
+    <center>
+   <button type="submit" class="btn btn-success"><h6 style="font-family: SimSun;">Sign Up</h6></button>
+    <button type="reset" class="btn btn-danger"><h6 style="font-family: SimSun;">Cancel</h6></button><br>
+
+        <div> <h3>{{ c}}</h3></div>
+        <div><h3>{{ m }}</h3></div>
+    </center>
+<br>
+    <br>
+            <center>
+     <a href="/helpapp/login2save" class="btn btn-warning btn-sm"><h6 style="font-family: SimSun;">Login</h6></a>
+     </center>
+    <div>
+        {% for i in messages %}
+         <h4 >{{i}}</h4>
+        {% endfor %}
+    </div>
+
+         </form>
+        </center>
+    </div>
+    </div>
+</div>
+</div>
+{% include 'html/footer.html' %}
+</body>
+</html>

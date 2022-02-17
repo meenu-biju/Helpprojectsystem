@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enquiry Report</title>
+</head>
+<body>
+{% include 'html/header.html' %}
+<center><h1>Details of User Enquiries</h1></center>
+<div class="container">
+<table border="2" class="table table-striped table-bordered table-sm" style="margin-top: 50px;">
+     <thead class="thead-dark">
+     <tr>
+         <th> NAME</th>
+         <th> PHONE</th>
+         <th> CITY</th>
+         <th> MESSAGE</th>
+     </tr>
+     </thead>
+<tbody>
+     {% for i in member %}
+          <tr>
+         <td>{{ i.name}}</td>
+         <td> {{ i.phone }}</td>
+         <td> {{ i.city }}</td>
+         <td> {{ i.message }}</td>
+<td>
+    <a href="/helpapp/delete/{{ i.id }}"><b>DELETE</b></a>&nbsp;&nbsp;
+</td>
+          </tr>
+      {% endfor %}
+</table>
+</div>
+{% include 'html/footer.html' %}
+</body>
+</html>

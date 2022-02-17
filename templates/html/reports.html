@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report page</title>
+</head>
+<body>
+{% include 'html/header.html' %}
+<div class="card text-white">
+  <img src="{% static 'images/red.png' %}" class="card-img" alt="..." width="100%;" height="250px;">
+  <div class="card-img-overlay"><br>
+      <br>
+      <br>
+      <center><h1 class="card-title" style="font-family: Bahnschrift;">REPORTS</h1></center>
+  </div>
+</div>
+<div class="container" style="padding-top: 40px; padding-bottom: 40px;">
+    <ol>
+        <h3 style="font-family: Bahnschrift;"><li><a href="/helpapp/show"> Request For Enquiries</a></li></h3>
+        <br>
+        <br>
+        <h3 style="font-family: Bahnschrift;"><li><a href="/helpapp/show1"> Details Of Sponsor's</a></li></h3>
+    </ol>
+    <div class="row" style="text-align: right">
+        <div class="col-sm-12" >
+            <h2><u>Pie Diagram On Monthly Expense</u></h2><br>
+            <img src="{% static 'images/pi.png' %}"  alt="..." width="500px;" height="400px;">
+
+        </div>
+    </div>
+</div>
+{% include 'html/footer.html' %}
+</body>
+</html>

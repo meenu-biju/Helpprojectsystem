@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>media page</title>
+</head>
+<body>
+{% include 'html/header.html' %}
+<div class="card bg-dark text-white">
+  <img src="{% static 'images/blognew1.png' %}" class="card-img" alt="..." width="100%;" height="250px;">
+  <div class="card-img-overlay"><br>
+      <br>
+      <br>
+      <center><h1 class="card-title" style="font-family: Bahnschrift;">BLOG</h1></center>
+  </div>
+</div>
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+          <img src="{% static 'images/blog6.png' %}" class="card-img" alt="..." width="100%;" height="250px;">
+<br><br>
+        <center>
+            <h5 style="font-family: Baskerville Old Face;">Here’s Everything That You Need to Know about Child Adoption</h5>
+            <p style="font-family: Agency FB; text-align: justify;">Adopting an orphaned child is a noble cause and can make a significant difference in the lives of orphan children. However, it’s a lengthy and complicated.&nbsp;&nbsp;&nbsp;<a href="#">Know More</a> </p>
+        </center>
+    </div>
+    <div class="col">
+       <img src="{% static 'images/blog1.png' %}" class="card-img" alt="..." width="100%;" height="250px;">
+<br><br>
+        <center>
+            <h5 style="font-family: Baskerville Old Face;">Gifts of Kindness: How You Can Change a Child’s Life</h5>
+            <p style="font-family: Agency FB; text-align: justify;">Children struck by poverty and without families are part of the most vulnerable population on earth. According to UNICEF, around 153 million children in the orphanges.&nbsp;&nbsp;&nbsp;<a href="#">Know More</a> </p>
+        </center>
+    </div>
+    <div class="col">
+     <img src="{% static 'images/blog2.png' %}" class="card-img" alt="..." width="100%;" height="250px;">
+<br><br>
+        <center>
+            <h5 style="font-family: Baskerville Old Face;">3 Ways to Empower Orphaned Youth to Unlock Their Potential </h5>
+            <p style="font-family: Agency FB; text-align: justify;">It is always difficult to observe the life of an orphan child knowing that they are not responsible for the life they are living.&nbsp;&nbsp;&nbsp;<a href="#">Know More</a> </p>
+        </center>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col">
+          <img src="{% static 'images/blog3.png' %}" class="card-img" alt="..." width="100%;" height="250px;">
+<br><br>
+        <center>
+            <h5 style="font-family: Baskerville Old Face;">3 Ways You Can Show Your Support for Orphans</h5>
+            <p style="font-family: Agency FB; text-align: justify;">For those of us lucky enough to have parents can’t even imagine what it must be like not to have them around. As an instinct.&nbsp;&nbsp;&nbsp;<a href="#">Know More</a> </p>
+        </center>
+    </div>
+    <div class="col">
+       <img src="{% static 'images/blog5.png' %}" class="card-img" alt="..." width="100%;" height="250px;">
+<br><br>
+        <center>
+            <h5 style="font-family: Baskerville Old Face;">The Impact of the Global Pandemic on Poverty in India</h5>
+            <p style="font-family: Agency FB; text-align: justify;">The Covid-19 pandemic has wreaked havoc globally. It’s a massively tumultuous time for the world as the death of millions was followed by global health.&nbsp;&nbsp;&nbsp;<a href="#">Know More</a> </p>
+        </center>
+    </div>
+    <div class="col">
+     <img src="{% static 'images/blog4.png' %}" class="card-img" alt="..." width="100%;" height="250px;">
+<br><br>
+        <center>
+            <h5 style="font-family: Baskerville Old Face;">Educate an Orphaned Child: How You Can Help</h5>
+            <p style="font-family: Agency FB; text-align: justify;">One in five children between the ages of 6 and 11 are unable to go to school in sub-Saharan Africa. We believe every child has the right to study.&nbsp;&nbsp;&nbsp;<a href="#">Know More</a> </p>
+        </center>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="row" >
+    <div class="col-sm-6">
+<center>
+    <h1 style="padding-top: 50px; padding-bottom: 50px; font-family: Bahnschrift;">Care For Poor&nbsp;&nbsp;<i class="fas fa-arrow-circle-right"></i></h1>
+</center>
+    </div>
+    <div class="col-sm-6">
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+<iframe width="853" height="480" src="https://www.youtube.com/embed/403iZ2Ibehk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe width="852" height="480" src="https://www.youtube.com/embed/pgxsEJnFuxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/mKNmuFFDuu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+
+</div>
+<br>
+<br>
+{% include 'html/footer.html' %}
+</body>
+</html>

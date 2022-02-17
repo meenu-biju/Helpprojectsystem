@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sponsor Login page</title>
+</head>
+<body>
+{% include 'html/header.html' %}
+<div class="container">
+
+    <div class="row" >
+        <div class="col-sm-12">
+            <center>
+      <img src="{% static 'images/c2login.png' %}"  alt="..." width="250px;" height="150px;">
+            </center>
+        </div>
+    </div>
+     <div class="row" style="background-color: bisque; padding-top: 40px; padding-bottom: 40px;">
+        <div class="col-sm-12">
+<center>
+    <form action="/helpapp/login2save" method="post">
+         {% csrf_token %}
+
+     <input type="text" name="username" placeholder="Enter Username"><br>
+     <input type="password" name="password" placeholder="Password"><br>
+    <br>
+    <button type="submit" class="btn btn-success "><h5 style="font-family: SimSun;"> Login</h5></button>
+    <button type="reset" class="btn btn-danger"><h5 style="font-family: SimSun;"> Cancel</h5></button>
+    <br> <br>    <br>
+    <h6 style="font-family: Bahnschrift;"> New Sponsor Account</h6>
+    <a href="/helpapp/sreg" class="btn btn-warning btn-sm"><h6 style="font-family: SimSun;">Sign Up</h6> </a>
+          <div>
+        {% for i in messages %}
+         <h5 >{{i}}</h5>
+        {% endfor %}
+         </div>
+    </form>
+</center>
+        </div>
+    </div>
+</div>
+{% include 'html/footer.html' %}
+</body>
+</html>
